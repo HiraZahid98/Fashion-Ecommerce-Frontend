@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script src="./js/product.js"></script>
+   <!-- Google fonts - Roboto -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="shortcut icon" href="favicon.png">
+   <link rel="stylesheet" href="./css/slider.css">
+  </head>
+  <body>
+    <h2>
+      
+        <%= text %>
+        
+    </h2>
+    <!-- navbar-->
+    <header class="header mb-5">
+          
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand home">
+                <img src="./images/logo.webp" style="width: 100px; height:72px" alt="Shop logo" class="d-none d-md-inline-block">
+                <img src="./images/logo.webp" style="width: 100px; height:72px" alt="Shop logo" class="d-inline-block d-md-none">
+                <span class="sr-only">Home</span>
+            </a>
+          <div class="navbar-buttons">
+            <button type="button" data-toggle="collapse" data-target="#navigation" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
+            <button type="button" data-toggle="collapse" data-target="#search" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></button><a href="cart.html" class="btn btn-outline-secondary navbar-toggler"><i class="fa fa-shopping-cart"></i></a>
+          </div>
+          <div id="navigation" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+              <li class="nav-item"><a href="./shop.html" class="nav-link">Shop</a></li>
+              <li class="nav-item"><a href="./aboutus.html" class="nav-link">About Us</a></li>
+              <li class="nav-item"><a href="./contactus.html" class="nav-link">Contact</a></li>
+
+            </ul>
+            <div class="navbar-buttons d-flex justify-content-end">
+              <!-- /.nav-collapse-->
+              <div id="search-not-mobile" class="navbar-collapse collapse"></div><a data-toggle="collapse" href="#search" class="btn navbar-btn btn-primary d-none d-lg-inline-block"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
+              <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="cart.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span>1 items in the cart</span></a></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="search" class="collapse">
+        <div class="container">
+          <form role="search" class="ml-auto">
+            <div class="input-group">
+              <input type="text" placeholder="Search" class="form-control">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div id="all">
+      <div id="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="main-slider" class="owl-carousel owl-theme">
+                <div class="item"><img src="https://www.zgspirit.com/web/image/23805-8a6c9b2e/2-MEN%20BANNER.jpg" alt="" class="img-fluid" style="height: 600px;"></div>
+                <div class="item"><img src="./images/carosal2.jpg" alt="" class="img-fluid" style="height: 600px;"></div>
+                <div class="item"><img src="./images/carosal3.jpg" alt="" class="img-fluid" style="height: 600px;"></div>
+                <div class="item"><img src="./images/carosal4.jpg" alt="" class="img-fluid" style="height: 600px;"></div>
+                <div class="item"><img src="https://www.zgspirit.com/web/image/23802-ba01f221/2-WOMEN%20BANNER.jpg" alt="" class="img-fluid" style="height: 600px;"></div>
+            </div>
+            </div>
+          </div>
+        </div>
+         
+<!-- featured product  -->
+<div id="hot">
+    <div class="box py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="mb-0">Top Sellers in Brands for you</h2>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product-slider owl-carousel owl-theme">
+        <div class="item">
+          <div class="product">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front"><a href="Product_Details.html"><img src="./images/dulce.png" alt="" class="img-fluid"></a></div>
+                <div class="back"><a href="Product_Details.html"><img src="/images/dulce.png" alt="" class="img-fluid"></a></div>
+              </div>
+            </div><a href="Product_Details.html" class="invisible"><img src="./images/dulce.png" alt="" class="img-fluid"></a>
+            <div class="text">
+              <h3><a href="Product_Details.html">Black Top</a></h3>
+              <p class="price"> 
+                <del></del>$143.00
+              </p>
+            </div>
+            
+          </div>
+          <!-- /.product-->
+        </div>
+        <div class="item">
+          <div class="product">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front"><a href="Product_Details.html"><img src="./images/dress3.png" alt="" class="img-fluid"></a></div>
+                <div class="back"><a href="Product_Details.html"><img src="./images/dress3.png" alt="" class="img-fluid"></a></div>
+              </div>
+            </div><a href="Product_Details.html" class="invisible"><img src="./images/dress3.png" alt="" class="img-fluid"></a>
+            <div class="text">
+              <h3><a href="Product_Details.html">Black Coat</a></h3>
+              <p class="price"> 
+                <del>$23</del>$43.00
+              </p>
+            </div>
+            <!-- /.text-->
+            <div class="ribbon sale">
+              <div class="theribbon">SALE</div>
+              <div class="ribbon-background"></div>
+            </div>
+            <!-- /.ribbon-->
+           
+          </div>
+          <!-- /.product-->
+        </div>
+        <div class="item">
+          <div class="product">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front"><a href="Product_Details.html"><img src="./images/jeans.png" alt="" class="img-fluid"></a></div>
+                <div class="back"><a href="Product_Details.html"><img src="./images/jeans.png" alt="" class="img-fluid"></a></div>
+              </div>
+            </div><a href="Product_Details.html" class="invisible"><img src="./images/jeans.png" alt="" class="img-fluid"></a>
+            <div class="text">
+              <h3><a href="Product_Details.html">Brown Inner with Fur Upper</a></h3>
+              <p class="price"> 
+                <del></del>$143.00
+              </p>
+            </div>
+            <!-- /.text-->
+          </div>
+          <!-- /.product-->
+        </div>
+        <div class="item">
+          <div class="product">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front"><a href="Product_Details.html"><img src="./images/floral.png" alt="" class="img-fluid"></a></div>
+                <div class="back"><a href="Product_Details.html"><img src="./images/floral.png" alt="" class="img-fluid"></a></div>
+              </div>
+            </div><a href="Product_Details.html" class="invisible"><img src="./images/floral.png" alt="" class="img-fluid"></a>
+            <div class="text">
+              <h3><a href="Product_Details.html">Gray Long Floral</a></h3>
+              <p class="price"> 
+                <del></del>$143.00
+              </p>
+            </div>
+            <!-- /.text-->
+          </div>
+          <!-- /.product-->
+        </div>
+        <div class="item">
+          <div class="product">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front"><a href="Product_Details.html"><img src="./images/green-floral.png" alt="" class="img-fluid"></a></div>
+                <div class="back"><a href="Product_Details.html"><img src="./images/green-floral.png" alt="" class="img-fluid"></a></div>
+              </div>
+            </div><a href="Product_Details.html" class="invisible"><img src="./images/green-floral.png" alt="" class="img-fluid"></a>
+            <div class="text">
+              <h3><a href="Product_Details.html">Green Long Maxi</a></h3>
+              <p class="price"> 
+                <del></del>$143.00
+              </p>
+            </div>
+            <!-- /.text-->
+            <div class="ribbon new">
+              <div class="theribbon">NEW</div>
+              <div class="ribbon-background"></div>
+            </div>
+            <!-- /.ribbon-->
+          </div>
+          <!-- /.product-->
+        </div>
+        <div class="item">
+          <div class="product">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front"><a href="Product_Details.html"><img src="./images/pinkfloral.png" alt="" class="img-fluid"></a></div>
+                <div class="back"><a href="Product_Details.html"><img src="./images/pinkfloral.png" alt="" class="img-fluid"></a></div>
+              </div>
+            </div><a href="Product_Details.html" class="invisible"><img src="./images/pinkfloral.png" alt="" class="img-fluid"></a>
+            <div class="text">
+              <h3><a href="Product_Details.html">Pink Floral</a></h3>
+              <p class="price"> 
+                <del></del>$143.00
+              </p>
+            </div>
+          </div>
+          <!-- /.product-->
+        </div>
+        <div class="item">
+          <div class="product">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front"><a href="Product_Details.html"><img src="./images/white-jeans.png" alt="" class="img-fluid"></a></div>
+                <div class="back"><a href="Product_Details.html"><img src="./images/white-jeans.png" alt="" class="img-fluid"></a></div>
+              </div>
+            </div><a href="Product_Details.html" class="invisible"><img src="./images/white-jeans.png" alt="" class="img-fluid"></a>
+            <div class="text">
+              <h3><a href="Product_Details.html">Check Shirt With Jeans</a></h3>
+              <p class="price"> 
+                <del>$280</del>$143.00
+              </p>
+            </div>
+            <!-- /.text-->
+            <div class="ribbon sale">
+              <div class="theribbon">SALE</div>
+              <div class="ribbon-background"></div>
+            </div>
+            <!-- /.ribbon-->
+            
+          </div>
+          <!-- /.product-->
+        </div>
+        <div class="item">
+          <div class="product">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front"><a href="Product_Details.html"><img src="./images/dany.png" alt="" class="img-fluid"></a></div>
+                <div class="back"><a href="Product_Details.html"><img src="./images/dany.png" alt="" class="img-fluid"></a></div>
+              </div>
+            </div><a href="Product_Details.html" class="invisible"><img src="./images/dany.png" alt="" class="img-fluid"></a>
+            <div class="text">
+              <h3><a href="Product_Details.html">Long Floral</a></h3>
+              <p class="price"> 
+                <del></del>$143.00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container-->
+    </div>
+  </div>
+<!-- featured product end  -->
+
+<!-- our qualities  -->
+        <div id="advantages">
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col-md-4">
+                <div class="box clickable d-flex flex-column justify-content-center mb-0 h-100">
+                  <div class="icon"><i class="fa fa-heart"></i></div>
+                  <h3><a href="#">Excellent Customers Service</a></h3>
+                  <p class="mb-0">We always provide good customer service. Our customers are the hero of our business</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box clickable d-flex flex-column justify-content-center mb-0 h-100">
+                  <div class="icon"><i class="fa fa-tags"></i></div>
+                  <h3><a href="#">Affordable & Best prices</a></h3>
+                  <p class="mb-0">Buy more in less. Your wallet friendly prices. Spend more, Save more.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box clickable d-flex flex-column justify-content-center mb-0 h-100">
+                  <div class="icon"><i class="fa fa-thumbs-up"></i></div>
+                  <h3><a href="#">100% satisfaction guaranteed</a></h3>
+                  <p class="mb-0">Free returns on everything for 3 months.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        
+         <!-- GET INSPIRED  -->
+        <div class="container">
+          <div class="col-md-12">
+            <div class="box slideshow">
+              <h3>Shoot for your Goals</h3>
+              <p class="lead">Be the best version of you. </p>
+              <div id="get-inspired" class="owl-carousel owl-theme">
+                <div class="item"><a href="#"><img src="https://www.zgspirit.com/web/image/23805-8a6c9b2e/2-MEN%20BANNER.jpg" alt="Get inspired" class="img-fluid"></a></div>
+                <div class="item"><a href="#"><img src="https://www.zgspirit.com/web/image/23802-ba01f221/2-WOMEN%20BANNER.jpg" alt="Get inspired" class="img-fluid"></a></div>
+                <div class="item"><a href="#"><img src="https://www.zgspirit.com/web/image/23805-8a6c9b2e/2-MEN%20BANNER.jpg" alt="Get inspired" class="img-fluid"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *** GET INSPIRED END ***-->
+        <!--
+        *** BLOG HOMEPAGE ***
+        _________________________________________________________
+        -->
+        <div class="box text-center">
+          <div class="container">
+            <div class="col-md-12">
+              <h3 class="text-uppercase">From our blog</h3>
+              <p class="lead mb-0">What's new in the world of fashion trend? <a href="#">Check our blog!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="col-md-12">
+            <div id="blog-homepage" class="row">
+              <div class="col-sm-6">
+                <div class="post">
+                  <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                  <p class="author-category">By <a href="#">onlinemoneyworld</a> in <a href="">Fashion and style</a></p>
+                  <hr>
+                  <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p class="read-more"><a href="#" class="btn btn-primary">Continue reading</a></p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="post">
+                  <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                  <p class="author-category">By <a href="#">onlinemoneyworld</a> in <a href="">About Minimal</a></p>
+                  <hr>
+                  <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p class="read-more"><a href="#" class="btn btn-primary">Continue reading</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- FOOTER  -->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="mb-3">Pages</h4>
+            <ul class="list-unstyled">
+              <li><a href="aboutus.html">About us</a></li>
+              <li><a href="#">Terms and conditions</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+            <hr>
+            <h4 class="mb-3">User section</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
+          </div>
+          <!-- /.col-lg-3-->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="mb-3">Top categories</h4>
+            <h5>Men</h5>
+            <ul class="list-unstyled">
+              <li><a href="shop.html">T-shirts</a></li>
+              <li><a href="shop.html">Shirts</a></li>
+              <li><a href="shop.html">Accessories</a></li>
+            </ul>
+            <h5>Ladies</h5>
+            <ul class="list-unstyled">
+              <li><a href="shop.html">T-shirts</a></li>
+              <li><a href="shop.html">Skirts</a></li>
+              <li><a href="shop.html">Pants</a></li>
+              <li><a href="shop.html">Accessories</a></li>
+            </ul>
+          </div>
+          <!-- /.col-lg-3-->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="mb-3">Where to find us</h4>
+            <p><strong>Street:  3627 Sun Valley Road</strong><br>North Bergen<br>New Jersey<br>45Y 73J<br>San Fransisco<br><strong>Great Britain</strong></p><a href="contactus.html">Go to contact page</a>
+            <hr class="d-block d-md-none">
+          </div>
+          <!-- /.col-lg-3-->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="mb-3">Get the news</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut erat eu ex dictum pellentesque. Aenean eu pharetra est. Fusce eu pulvinar sapien.</p>
+            <form>
+              <div class="input-group">
+                <input type="text" class="form-control"><span class="input-group-append">
+                  <button type="button" class="btn btn-outline-secondary">Subscribe!</button></span>
+              </div>
+              <!-- /input-group-->
+            </form>
+            <hr>
+            <h4 class="mb-3">Stay in touch</h4>
+            <p class="social"><a href="#" class="facebook external"><i class="fa fa-facebook"></i></a><a href="#" class="twitter external"><i class="fa fa-twitter"></i></a><a href="#" class="instagram external"><i class="fa fa-instagram"></i></a><a href="#" class="gplus external"><i class="fa fa-google-plus"></i></a><a href="#" class="email external"><i class="fa fa-envelope"></i></a></p>
+          </div>
+          <!-- /.col-lg-3-->
+        </div>
+        <!-- /.row-->
+      </div>
+      <!-- /.container-->
+    </div>
+     <!-- FOOTER END -->
+    
+    
+     <!-- COPYRIGHT  -->
+   
+    <div id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mb-2 mb-lg-0">
+            <p class="text-center text-lg-left">©2019 girls fasion dresses 2022.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/slider.js"></script>
+    <script src="https://kit.fontawesome.com/7488de9e51.js" crossorigin="anonymous"></script>
+  </body>
+</html>
